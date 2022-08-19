@@ -9,15 +9,15 @@ class Exercice1Test(unittest.TestCase):
         try:
             ship1 = Ship("Misericorde", "small", "Ann Leckie")
             ship2 = Ship("Épée", "small", "Ann Leckie")
-            self.assertFalse(is_same_ship(ship1, ship2), "les vaisseaux ont des names differents")
+            self.assertFalse(is_same_ship(ship1, ship2), "les vaisseaux ont des names différents")
 
             ship1 = Ship("Épée", "small", "Ann Leckie")
             ship2 = Ship("Épée", "large", "Ann Leckie")
-            self.assertFalse(is_same_ship(ship1, ship2), "les vaisseaux ont des size differentes")
+            self.assertFalse(is_same_ship(ship1, ship2), "les vaisseaux ont des size différentes")
 
             ship1 = Ship("Justice", "large", "Ann Leckie")
             ship2 = Ship("Justice", "large", "Peter F. Hamilton")
-            self.assertFalse(is_same_ship(ship1, ship2), "les vaisseaux ont des auteurs differentes")
+            self.assertFalse(is_same_ship(ship1, ship2), "les vaisseaux ont des auteurs différentes")
 
             ship1 = Ship("Misericorde", "small", "Ann Leckie")
             ship2 = Ship("Misericorde", "small", "Ann Leckie")
@@ -58,7 +58,7 @@ class Exercice1Test(unittest.TestCase):
             except Exception as exp:
                 assert True
             else:
-                assert False, "il y a deja 2 large, toutes les places sont occupés"
+                assert False, "il y a déjà 2 large, toutes les places sont occupées"
 
             spaceport = Spaceport(
                 docked=[
@@ -79,7 +79,7 @@ class Exercice1Test(unittest.TestCase):
             except Exception as exp:
                 assert True
             else:
-                assert False, "il y a deja 2 large et 5 small, toutes les places sont occupés"
+                assert False, "il y a déjà 2 large et 5 small, toutes les places sont occupées"
 
             spaceport = Spaceport()
             ship = Ship("Razorback", "small", "James S.A. Corey")

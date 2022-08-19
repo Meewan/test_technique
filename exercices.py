@@ -6,7 +6,7 @@
 class Ship:
     def __init__(self, name, size, author):
         self.name = name
-        self.size = size  # la size est un str qui vaut soir "small" soit "large"
+        self.size = size  # la size est un str qui vaut soit "small" soit "large"
         self.author = author
 
     def is_small(self):
